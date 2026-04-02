@@ -1,17 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-  <head>
-    <title>503 Backend.max_conn reached</title>
-  </head>
-  <body>
-    <h1>Error 503 Backend.max_conn reached</h1>
-    <p>Backend.max_conn reached</p>
-    <h3>Error 54113</h3>
-    <p>Details: cache-hkg17930-HKG 1775054503 2675370685</p>
-    <hr>
-    <p>Varnish cache server</p>
-  </body>
+<div class="overlay"></div>
+
+<div class="app">
+  <h1>Classroom Activity Generator</h1>
+  <h2>Enter the generating button to start</h2>
+
+  <button id="generateBtn">Generate Activity</button>
+
+  <div id="loader" class="hidden">Sony is thinking...</div>
+
+  <div id="card" class="card hidden">
+    <h2 id="name"></h2>
+
+    <p><strong>Idea:</strong> <span id="idea"></span></p>
+    <p><strong>Benefit:</strong> <span id="benefit"></span></p>
+
+    <p><strong>Steps:</strong></p>
+    <ol id="steps"></ol>
+
+    <button id="nextBtn">Next Idea</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
